@@ -1,0 +1,10 @@
+version: '3.5'
+
+services: 
+  expensetrack.database:
+    image:  dmaxim/mxinfo.veritas.database:v1.0
+    container_name: mxinfo.veritas.database
+    environment:
+      - "ACCEPT_EULA=Y"
+    ports:
+      - "51433:1433"

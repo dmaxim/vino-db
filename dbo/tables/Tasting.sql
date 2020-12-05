@@ -1,0 +1,9 @@
+CREATE TABLE dbo.Tasting
+(
+    TastingId SMALLINT IDENTITY(1,1) NOT NULL CONSTRAINT PK_Tasting_Id PRIMARY KEY CLUSTERED,
+    TastingDate DATETIME  NOT NULL,
+    WineryId INT NOT NULL,
+    CONSTRAINT FK_Tasting_Winery FOREIGN KEY (WineryId) REFERENCES dbo.Winery(WineryId)
+)
+
+GO

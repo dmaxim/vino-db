@@ -1,0 +1,8 @@
+CREATE TABLE dbo.Tag
+(
+    TagId INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_Tag_Id,
+    TagName VARCHAR(55) NOT NULL
+)
+
+GO
+

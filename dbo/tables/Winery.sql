@@ -1,0 +1,13 @@
+CREATE TABLE dbo.Winery
+(
+    WineryId INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_Winery_Id PRIMARY KEY CLUSTERED,
+    WineryName VARCHAR(100) NOT NULL,
+    StreetAddress VARCHAR(150) NOT NULL,
+    StateRegionCode VARCHAR(5) NOT NULL,
+    ZipCode VARCHAR(10) NOT NULL,
+    CountryCode VARCHAR(10) NOT NULL,
+    City VARCHAR(50) NOT NULL,
+    ImageUrl VARCHAR(255) NOT NULL
+)
+
+GO

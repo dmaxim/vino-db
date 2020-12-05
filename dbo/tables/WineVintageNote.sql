@@ -1,0 +1,10 @@
+CREATE TABLE dbo.WineVintageNote
+(
+    WineVintageNoteId INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_WineVintageNote_Id PRIMARY KEY CLUSTERED,
+    WineId INT NOT NULL,
+    Vintage SMALLINT NOT NULL,
+    Note VARCHAR(255) NOT NULL,
+    CONSTRAINT FK_WineVintageNote_Wine FOREIGN KEY (WineId) REFERENCES dbo.Wine(WineId)
+)
+
+GO
